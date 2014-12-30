@@ -15,13 +15,22 @@
   <body>
     <div id="main">
       <h1>chatterbox</h1>
-      <button class="button">Fetch</button>
       <form id="form" name="form">
-      <input type="text" id="username">
-      <input type="text" id="message">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <input type="text" id="room" placeholder="Room name">
       </form>
-      <button class="submit">Submit</button>
-    </div>
+      <div id="friend"></div>
+      <div id="selection">
+        <button class="submit">Submit</button>
+        <button class="button">Fetch</button>
+        <select id="roomSelect">
+          <option default>Select Room</option>
+
+        </select>
+      </div>
+      <p>
     <div id="chats"></div>
+    </div>
   </body>
 </html>
